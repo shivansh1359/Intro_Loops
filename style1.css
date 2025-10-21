@@ -1,0 +1,45 @@
+
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+html,
+body{
+    height: 100%;
+    width: 100%;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    }
+    
+.box{
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    padding: 1rem 2rem;
+    border: none;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(rgba(138, 131, 131, 0.5) ,rgba(25, 29, 30, 0.522)), url('https://cdn.pixabay.com/photo/2023/08/30/04/16/man-8222531_640.jpg')
+
+}
+button::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 1000px;
+    background:linear-gradient(to bottom right,rgb(88, 23, 23),rgb(145, 33, 51) );
+    z-index: -1;
+    padding: 10%;
+    margin: 0;
+    border: transparent solid 50px;
+    box-shadow: red;
+
+
+}
